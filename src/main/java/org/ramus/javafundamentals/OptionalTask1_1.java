@@ -8,7 +8,7 @@ public class OptionalTask1_1 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int temp;
-        int average;
+        int average = 0;
 
         System.out.println("How much number do you want input?");
 
@@ -57,6 +57,26 @@ public class OptionalTask1_1 {
         System.out.println(userNumbers[userNumbers.length-1]);
         System.out.println("it length is");
         System.out.println(Integer.toString(userNumbers[userNumbers.length-1]).length());
+
+
+        for (int i = 0; i < userNumbers.length; i++){
+            average += Integer.toString(userNumbers[i]).length();
+        }
+        average = average/userNumbers.length;
+        System.out.println("Average numbers length is " + average);
+
+        for (int i = 0; i < userNumbers.length; i++){
+            if (Integer.toString(userNumbers[i]).length() > average){
+                System.out.println(userNumbers[i]);
+                System.out.println("Average is " + Integer.toString(userNumbers[i]).length());
+            }
+        }
+        for (int i = 0; i<userNumbers.length; i++){
+            if (Integer.toString(userNumbers[i]).length() < average){
+                System.out.println(userNumbers[i]);
+                System.out.println("Average is " + Integer.toString(userNumbers[i]).length());
+            }
+        }
 
 
     }
