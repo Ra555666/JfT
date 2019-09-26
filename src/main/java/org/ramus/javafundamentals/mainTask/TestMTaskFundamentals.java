@@ -7,6 +7,7 @@ public class TestMTaskFundamentals {
         MTaskFundamentals mainTask = new MTaskFundamentals();
         Scanner input = new Scanner(System.in);
         String month;
+        boolean monthActive = true;
 
 
 //        System.out.println("What is your name?");
@@ -22,10 +23,17 @@ public class TestMTaskFundamentals {
 //        int numForSum = input.nextInt();
 //        mainTask.summingNumbers(numForSum);
 
-        System.out.println("What month number is ? ");
-        int monthNumber = input.nextInt();
-        month = mainTask.whatIsMonthIs(monthNumber);
-        System.out.println("Your month is "+ month);
 
+
+        while (monthActive) {
+            System.out.println("What month number is ? ");
+            int monthNumber = input.nextInt();
+            if () {
+                month = mainTask.whatIsMonthIs(monthNumber);
+                System.out.println("Your month is " + month);
+            }
+                break;
+
+        }
     }
 }
